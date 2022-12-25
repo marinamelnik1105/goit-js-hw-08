@@ -17,7 +17,6 @@ if (userData.email.length > 0 || userData.review.length > 0) {
 }
 
 function onSaveValue() {
-  console.dir(form);
   userData.email = form.elements['email'].value;
   userData.review = form.elements['message'].value;
   localStorage.setItem('feedback-form-state', JSON.stringify(userData));
