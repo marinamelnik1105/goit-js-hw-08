@@ -24,7 +24,7 @@ function onSaveValue() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  console.log(`email: ${userData.email}, review: ${userData.review}`);
+  console.log(userData);
   form.elements['email'].value = '';
   form.elements['message'].value = '';
   localStorage.clear();
